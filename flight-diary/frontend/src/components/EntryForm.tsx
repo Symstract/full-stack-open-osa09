@@ -4,7 +4,7 @@ import { createEntry } from "../services/diaryService";
 import type { DiaryEntry, Visibility, Weather } from "../types";
 
 interface EntryFormProps {
-  onSuccess: { (newEntry: DiaryEntry): void };
+  onSuccess: (newEntry: DiaryEntry) => void;
 }
 
 const EntryForm = ({ onSuccess }: EntryFormProps) => {
